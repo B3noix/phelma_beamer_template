@@ -1,0 +1,48 @@
+% #########################################
+
+% This file provides a template to use beamer-theme
+% for Grenoble INP - Phelma presentations 
+% It has not being validated by any official in the school
+
+% author: Benoit LECONTE
+% email: benoit.leconte@grenoble-inp.org
+% Grenoble INP - Phelma
+% June 2023
+
+% #########################################
+
+\institute[PHELMA]{
+\begin{columns}
+  \column[c]{5cm} \centering
+    \includegraphics[width=0.25\paperwidth]{pictures/Nouvo-logo-Phelma_web.jpg}
+  \column[c]{5cm} \centering %additional logo to be displayed
+   \includegraphics[width=0.12\paperwidth]{pictures/uit_logo.png}
+\end{columns}}
+\usetheme{Boadilla} % Here you can change the beamer theme
+\definecolor{color_logo}{RGB}{44,44,68}
+\definecolor{color_second}{RGB}{198,40,39}
+
+\setbeamercolor{palette primary}{fg=black,bg=color_logo} % Set the primary palette colors
+\setbeamercolor{palette secondary}{fg=black,bg=color_second} % Set the secondary palette colors
+\setbeamercolor{palette tertiary}{fg=black,bg=white} % Set the tertiary palette colors
+
+\setbeamercolor{item projected}{bg=color_logo}
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{navigation symbols}{}
+\setbeamercovered{transparent}
+\setbeamercolor{block title}{fg=color_logo}
+\setbeamercolor{local structure}{fg=color_logo}
+
+\setbeamercolor{title}{fg=color_logo}
+\setbeamercolor{frametitle}{fg=color_logo}
+\setbeamercolor{structure}{fg=color_logo}
+\setbeamercolor{item}{fg=color_logo}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(0.60\paperwidth,-.7cm) % Easily manage the position with the use of textpos
+\vspace{.3cm}
+\includegraphics[height=0.95cm]{pictures/uit_logo.png} % Here put the logo of the second school if there is one
+\hspace{.3cm}
+\includegraphics[height=0.95cm]{pictures/Nouvo-logo-Phelma_web.jpg}
+\end{textblock*}}
